@@ -19,21 +19,21 @@ function Drawer() {
                         <h1 className="font-bold text-[2rem] md:text-[2.5rem] dark:text-white">{header_logo_name}</h1>
                     </div>
                     {route_data.map((item, id) => (<Link href={item.link} key={id}>
-                        <div className="text-[1.5rem] md:text-[1.8rem] font-semibold opacity-80 p-3 mt-5 rounded-lg duration-300 hover:duration-300 hover:bg-[rgba(0,0,0,0.1)] hover:text-white">
+                        <div className="text-[1.4rem] md:text-[1.8rem] font-semibold opacity-80 p-2 rounded-lg duration-300 hover:duration-300 hover:bg-[rgba(0,0,0,0.1)] hover:text-white">
                             <div className="flex justify-between items-center">
                                 <h3>{item.name}</h3>
                                 <IoIosOpen className="cursor-pointer text-[2.5rem] rounded-full p-2 duration-300 hover:duration-300 hover:scale-150 text-black" />
                             </div>
                         </div>
                     </Link>))}
-                    <div className="flex flex-col gap-3 mt-8 lg:mt-[20%] text-[1.5rem] lg:text-[1.8rem] font-semibold">
+                    <div className="flex flex-col gap-3 mt-8 lg:mt-[20%] text-[1.4rem] lg:text-[1.8rem] font-semibold">
                         <button className="text-[#4CAF4F] bg-green-100 p-1 rounded-lg duration-300 hover:duration-300  hover:bg-green-200 hover:text-black">{header_btn_1}</button>
                         <button className="bg-[#4CAF4F] p-1 rounded-lg duration-300 text-white hover:duration-300 hover:bg-green-600">{header_btn_2}</button>
                     </div>
                 </DrawerHeader>
                 <DrawerFooter>
                     <DrawerClose>
-                        <button className="absolute top-10 right-7 text-[2rem] md:text-[2.5rem] duration-300 hover:duration-300 hover:scale-150 "><IoMdExit /></button>
+                        <button className="absolute top-12 right-7 text-[2rem] md:text-[2.5rem] duration-300 hover:duration-300 hover:scale-150 "><IoMdExit /></button>
                     </DrawerClose>
                 </DrawerFooter>
             </DrawerContent>
