@@ -12,7 +12,7 @@ function Drawer() {
             <DrawerTrigger>
                 <IoMdMenu className="dark:text-white duration-300 hover:duration-300 hover:rotate-180 mt-2" size={30} />
             </DrawerTrigger>
-            <DrawerContent className='bg-[#eaffe1a1] h-screen top-0 right-0 mt-0 w-full rounded-none'>
+            <DrawerContent className='bg-[#eaffe1a1] h-screen top-0 right-0 mt-0 w-full rounded-none overflow-auto'>
                 <DrawerHeader className="relative">
                     <div className="flex justify-start items-center gap-2 ">
                         <Image src="/logo_nav.svg" width={50} height={50} alt="Nav Logo" />
@@ -26,9 +26,9 @@ function Drawer() {
                             </div>
                         </div>
                     </Link>))}
-                    <div className="flex flex-col gap-3 mt-[20%] text-[1.8rem] font-semibold">
-                        <button className="text-[#4CAF4F] bg-green-100 p-3 rounded-lg duration-300 hover:duration-300  hover:bg-green-200 hover:text-black">{header_btn_1}</button>
-                        <button className="bg-[#4CAF4F] p-3 rounded-lg duration-300 text-white hover:duration-300 hover:bg-green-600">{header_btn_2}</button>
+                    <div className="flex flex-col gap-3 mt-8 lg:mt-[20%] text-[1.5rem] lg:text-[1.8rem] font-semibold">
+                        <button className="text-[#4CAF4F] bg-green-100 p-1 rounded-lg duration-300 hover:duration-300  hover:bg-green-200 hover:text-black">{header_btn_1}</button>
+                        <button className="bg-[#4CAF4F] p-1 rounded-lg duration-300 text-white hover:duration-300 hover:bg-green-600">{header_btn_2}</button>
                     </div>
                 </DrawerHeader>
                 <DrawerFooter>
